@@ -1,0 +1,272 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-size: cover;
+    background-color: black;
+}
+
+header{
+    z-index: 1;
+    position: fixed;
+    background: #22242A;
+    padding: 20px;
+    width: calc(100% - 0%);
+    top: 0;
+    height: 10px;
+}
+
+.left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    margin-left: 20px;
+	
+}
+
+.left_area span{
+    color: #19B3D3;
+}
+
+.right_area{
+    padding: 10px;
+    float: right;
+    margin-top: -63px;
+    margin-right: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #19B3D3;
+   
+}
+
+.right_area:hover{
+    background: #cddde0;
+}
+.search {
+	
+	margin-top: -44px;
+	padding: 10px;
+	margin-left: 145px;
+}
+#searchBar {
+	height: 30px;
+	width: device-width;
+	width: calc(70% - 0%);
+	min-width: 63vh;
+    border: yes;
+    color: white;	
+	border-color: #19B3D3;
+    border-radius: 24px;
+    background-color: #22242A;
+    font-size: 15px;
+	padding-left: 15px;
+    padding-right: 15px;
+    
+}
+#searchBar:focus {
+    outline: none;
+    background-color: #22242A;
+	color: white;
+	font-weight: 700;
+	padding-left: 15px;
+    padding-right: 15px; 
+    border-color: blue;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.7);
+}
+.sidebar{
+    z-index: 1;
+    top: 0;
+    background: #22242A;
+    margin-top: 46px;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    width: 180px;
+    border-radius: 4px;
+    transition-property: left;
+    font-size: 15px;
+    display: block;
+	height: 100vh;
+}
+
+.sidebar a{
+    color: #faf7f7;
+    display: block;
+    width: 100%;
+    line-height: 45px;
+    text-decoration: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+    
+}
+
+.sidebar a:hover{
+    background: #19B3D3;
+    border-radius: 15px;
+}
+
+.sidebar i{
+    padding-left: 10px;
+}
+
+label #sidebar_btn{
+    z-index: 1;
+    color: #19B3D3;
+    position: fixed;
+    cursor: pointer;
+    left: 14px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.1s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover{
+    color: #19B3D3;
+}
+
+#check:checked ~ .sidebar{
+    left: -185px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+.content{
+    width: (100% - 1px);
+    margin-top: 10px;
+    padding: 20px;
+    margin-left: 1px;
+    height: 70px;
+    color: white;
+}
+
+#check:checked ~ .content{
+    margin-left: 60px;
+}
+
+#check:checked ~ .sidebar .profile_info{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+.container {
+    width: 150px;
+    height: auto;
+    background-color: #0c0c0c;
+	position: center;
+    padding: 40px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.tradingview-widget-container {
+	height: 100vh;
+	width: device-width;
+	background: cover;
+			
+}
+#tradingview_654c1 {
+	border: yes;
+	margin-top: 38px;
+    height: 100vh;
+	width: device-width;
+	background: cover;
+			
+            
+			
+}
+		
+ body::-webkit-scrollbar {
+    width: 7px;
+ }
+
+ body::-webkit-scrollbar-track {
+    background: black;
+ }
+
+ body::-webkit-scrollbar-thumb {
+    background: #555;
+	border-radius: 20px;
+ }
+
+ body::-webkit-scrollbar-thumb:hover {
+    background: white;
+	border-radius: 20px;
+ }		
+
+@media only screen and (max-width: 480px) {
+header{
+    z-index: 1;
+    position: fixed;
+    background: #22242A;
+    padding: 20px;
+    width: calc(100% - 0%);
+    top: 0;
+    height: 25px;
+}
+.sidebar{
+   
+    width: 180px;
+    border-radius: 4px;
+    transition-property: left;
+    font-size: 17px;
+    display: block;
+	height: 100vh;
+	
+}
+
+	
+	.search {
+	
+	margin-top: -34px;
+	padding: 10px;
+	margin-left: 110px;
+}
+    #searchBar {
+	width: 40px;	
+	min-width: 25vh;
+	height: 25px;
+    border: yes;	
+	border-color: #19B3D3;
+    border-radius: 30px;
+    background-color: #22242A;
+    font-size: 16px;
+    
+}
+   .left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.left_area span{
+    color: #19B3D3;
+}
+
+
+
+
+
+.tradingview-widget-container {
+	background: cover;
+	margin-top: 60px;
+	height: 90vh;
+	width: device-width;
+}
+#tradingview_654c1 {
+	background: cover;
+	height: 90vh;
+	width: device-width;
+	background: cover;
+			
+}
+}

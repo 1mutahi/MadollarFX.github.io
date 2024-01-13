@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>madollar//live.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>       
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript"></script>
+
+    <style>
+    .iframe-container {
+ position: fixed;
+ width: 100%;
+ padding-bottom: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+ height: 100vh;
+ overflow: auto;
+ 
+ background: white; /* You can set the background color here */
+}
+
+.iframe-container iframe {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100vh;
+ border: 0; /* You can set the border here */
+}
+@media only screen and (max-width: 480px) { 
+.iframe-container iframe {
+    top: 10px;
+}	
+}
+   </style>
+
+</head>
+<body>
+    <input type="checkbox" id="check" placeholder="check">
+    
+    <header>
+    <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+        
+    </label>
+    <div class="left_area">
+        <h3>MaDollar<span>FX</span></h3>
+        
+    </div>
+	<div class="search">
+	<i class="fas "></i><input type=" text" id="searchBar" placeholder=" Search...">
+    <ul id="searchResults"></ul>
+	</div>
+    <div class="right_area">
+        <a href="#" class="fas fa-user">.</a>
+    </div>
+    </header>
+	
+    <div class="sidebar">
+        <a href="home.html"><i class="fas fa-home"></i><span>  Home</span></a>
+        <a href="live.html"><i class="fas fa-desktop"></i><span>  Live Trades</span></a>
+        <a href="executed.html"><i class="fas fa-tachometer-alt"></i><span>  Executed</span></a>
+        <a href="news.html"><i class="fas fa-chart-line"></i><span>  News</span></a>
+        <a href="feedbacks.html"><i class="far fa-comments"></i><span>  Feedbacks</span></a>
+        <a href="resources.html"><i class="fas fa-database"></i><span>  Resources</span></a>
+        <a href="notifications.html"><i class="fas fa-bell"></i><span>  Notifications</span></a>
+    </div>
+
+
+</div>
+<div class="iframe-container">
+ <iframe src="https://foresignal.com/en/" frameborder="0"></iframe>
+ 
+</div>
+    
+<script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+    });
+});
+        
+</script>
+
+
+</body>
+</html>
+
+
