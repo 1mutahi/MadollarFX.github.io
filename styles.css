@@ -230,7 +230,7 @@ header{
 }
     #searchBar {
 	width: 40px;	
-	min-width: 25vh;
+	min-width: 20vh;
 	height: 25px;
     border: yes;	
 	border-color: #19B3D3;
